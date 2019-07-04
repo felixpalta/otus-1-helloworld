@@ -33,3 +33,6 @@
 
 # Temp file
 *~
+
+# Cmake user file
+*.txt.user
