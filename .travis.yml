@@ -12,4 +12,4 @@ deploy:
     provider: script
     skip_cleanup: true
     script:
-    - curl --fail --show-error -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ufelixpalta:$BINTRAY_API_KEY "https://api.bintray.com/content/felixpalta/otus-cpp-repo/helloworld/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=stretch;deb_component=main;deb_architecture=amd64"
+    - curl --fail --show-error -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ufelixpalta:$BINTRAY_API_KEY "https://api.bintray.com/content/felixpalta/otus-cpp-repo/helloworld/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=wheezy;deb_component=main;deb_architecture=amd64"
