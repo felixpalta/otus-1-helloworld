@@ -2,6 +2,7 @@ language: cpp
 before_script:
 - echo "Run before_script"
 - sudo apt update -qq
+- sudo apt install libboost-test-dev
 script:
 - cmake .
 - cmake --build .
