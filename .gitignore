@@ -36,3 +36,6 @@
 
 # Cmake user file
 *.txt.user
+
+# Cmake build dir
+build/
