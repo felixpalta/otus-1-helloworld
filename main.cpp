@@ -3,7 +3,7 @@
 
 int main() {
 
-    std::cout << "Hello world!\n"
+    std::cout << "Hello World!\n"
               << "Version: " << otus::GetVersion() << std::endl;
     return 0;
 }
