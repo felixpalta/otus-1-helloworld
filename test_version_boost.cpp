@@ -1,9 +1,9 @@
-#define BOOST_TEST_MODULE test_version_boost
+#define BOOST_TEST_MODULE test_version
 
 #include "lib.hpp"
 #include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(test_version_boost)
+BOOST_AUTO_TEST_SUITE(test_version)
 
 BOOST_AUTO_TEST_CASE(test_valid_version)
 {
