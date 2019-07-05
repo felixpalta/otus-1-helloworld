@@ -10,5 +10,4 @@ deploy:
     provider: script
     skip_cleanup: true
     script:
-    - echo "Deploying build $TRAVIS_BUILD_NUMBER ..."
     - curl -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ufelixpalta:<API_KEY> "https://api.bintray.com/content/felixpalta/otus-cpp-repo/helloworld/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_component=main;deb_architecture=amd64"
