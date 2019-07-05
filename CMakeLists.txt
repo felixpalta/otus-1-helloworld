@@ -1,11 +1,17 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(helloworld)
+project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
-configure_file(version.h.in version.hpp)
+message("Version ${PROJECT_VERSION_MAJOR} ${PROJECT_VERSION_MINOR} ${PROJECT_VERSION_PATCH}")
+
+configure_file(version.h.in version.hpp @ONLY)
 
 add_executable(helloworld_cli "main.cpp")
 add_library(helloworld "lib.cpp")
+
+target_include_directories(helloworld
+    PRIVATE "${CMAKE_BINARY_DIR}"
+)
 
 target_link_libraries(helloworld_cli PRIVATE
     helloworld
