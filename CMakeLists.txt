@@ -6,7 +6,7 @@ message("Version ${PROJECT_VERSION_MAJOR} ${PROJECT_VERSION_MINOR} ${PROJECT_VER
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
-include(CmakeLists-GTest.cmake)
+include(CMakeLists-GTest.cmake)
 
 configure_file(version.h.in version.hpp @ONLY)
 

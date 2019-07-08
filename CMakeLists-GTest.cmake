@@ -1,4 +1,4 @@
-configure_file(CMakeLists-Gtest-Repo.txt.in googletest-download/CMakeLists.txt)
+configure_file(CMakeLists-GTest-Repo.txt.in googletest-download/CMakeLists.txt)
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
   RESULT_VARIABLE result
   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/googletest-download )
